@@ -1,3 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
-    console.log("c'est chargé")
-})
+document.addEventListener("DOMContentLoaded", function() {
+    console.log('Document bien chargée')
+});
