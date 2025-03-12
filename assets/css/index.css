@@ -20,7 +20,54 @@ body{
 
 header{
     width: 100%;
-    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+header .NavBar{
+    display: flex;
+    border: 1px solid var(--first-color);
+    background-color: var(--first-color);
+    padding: 16px;
+    border-radius: 25px;
+    min-width: 300px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .NavBar a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    position: relative;
+    padding-bottom: 5px;
+}
+
+header .NavBar a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    color: var(--body-color);
+    bottom: 0;
+    left: 0;
+    background-color: var(--body-color);
+    transition: width 0.4s ease;
+}
+
+header .NavBar a:hover::after{
+    width: 100%;
+}
+
+
+header .NavBar i{
+    margin: 5px;
+}
+
+footer{
+    margin-top: auto;
 }
 
 #about{
