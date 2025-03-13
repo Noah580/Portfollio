@@ -15,7 +15,7 @@ body{
     flex-direction: column;
     min-height: 100vh;
     background-color: var(--body-color);
-    gap: 50px;
+    gap: 70px;
 }
 
 
@@ -147,11 +147,74 @@ section{
 
 
 #Contact{
-
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: var(--secondary-color);
 }
 
-footer{
+#Contact .form{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--first-color);
+    border-radius: 8px;
+    padding: 30px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
 
+#Contact .form form{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 15px;
+}
+
+#Contact .form form .gp{
+    display: flex;
+    flex-direction: column;
+}
+
+#Contact .form form .gp label{
+    color: var(--secondary-color);
+    font-size: 18px;
+    text-align: center;
+}
+
+#Contact .form form .gp input{
+    height: 35px;
+    width: 250px;
+    outline: none;
+    font-size: 18px;
+    color: var(--first-color);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 8px;
+}
+
+
+#Contact .form form .gp input:focus{
+    color: var(--first-color);
+}
+
+#Contact .form form button{
+    padding: 14px;
+    color: var(--secondary-color);
+    transition: 0.4s;
+    outline: none;
+    font-size: 18px;
+}
+
+#Contact .form form button:hover{
+    color: var(--first-color);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+
+footer{
+    
 }
 
 
